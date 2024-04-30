@@ -126,37 +126,37 @@ MariaDB [(none)]>
 ```
 ### C'est normal tkt pas, bref mtn on va creer notre DB (le nom va être ladbd pour le tuto mais tu peux mettre ce que tu veux) :
     
-```bash
+```sql
 MariaDB [(none)]> CREATE DATABASE ladbd;
 ```
 
 ### Juste apres ça vu que c'est tout frais on va creer un user pour la db:
-```bash
+```sql
 MariaDB [(none)]> CREATE USER 'user'@'localhost' IDENTIFIED BY 'mdp';
 ```
 ### Ok par contre la le user à login que en localhost donc si tu veux qu'il puisse se connecter de partout tu peux mettre `@'%'` a la place de `@'localhost'` c'est kdo
 
 ### Ensuite on va donner les droits a notre user sur la db qu'on a creer :
-```bash
+```sql
 GRANT ALL PRIVILEGES ON ladb.* TO 'nino'@'localhost';
 ```
 ### Même chose que pour le user si tu veux qu'il puisse se connecter de partout tu peux mettre `@'%'` a la place de `@'localhost'`
 
 ### Et pour appliquer tout ces changements :
-```bash
+```sql
 FLUSH PRIVILEGES;
 ```
 
 ### Et voila vous avez une base de donnée avec un user et tout et tout, mtn si vous voulez Faire des trucs dessus vous avez juste a faire des requetes SQL apres avec fait : 
-```bash
+```sql
 USE ladbd;
 ```
 ### Maria-db va changer de ça :
-```bash
+```sql
 MariaDB [(none)]> 
 ```
 ### A ça :
-```bash
+```sql
 MariaDB [ladbd]> 
 ```
 ### Et voila vous pouvez faire vos requetes SQL comme `CREATE TABLE`, `INSERT INTO`, `SELECT * FROM` etc...
