@@ -1,10 +1,10 @@
 # Tuto Base De Données
 
 ## Sommaire
-### [Introduction](#Introduction)
-### [Installation](#Installation)
-### [Configuration](#Configuration)
-### [Utilisation](#Utilisation)
+### [Introduction](##Introduction)
+### [Installation](##Installation)
+### [Configuration](##Configuration)
+### [Utilisation](##Utilisation)
 
 ## Introduction
 ### Je vais vous montrer comment installer et faire une base de donnée ainsi que de pouvoir récupérer des informations de cette base de donnée.
